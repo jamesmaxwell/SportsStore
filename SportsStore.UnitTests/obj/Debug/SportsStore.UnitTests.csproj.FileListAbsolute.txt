@@ -1,0 +1,17 @@
+E:\project\SportsStore\SportsStore.UnitTests\bin\Debug\SportsStore.UnitTests.dll
+E:\project\SportsStore\SportsStore.UnitTests\bin\Debug\SportsStore.UnitTests.pdb
+E:\project\SportsStore\SportsStore.UnitTests\bin\Debug\Moq.dll
+E:\project\SportsStore\SportsStore.UnitTests\bin\Debug\Ninject.dll
+E:\project\SportsStore\SportsStore.UnitTests\bin\Debug\Moq.pdb
+E:\project\SportsStore\SportsStore.UnitTests\bin\Debug\Moq.xml
+E:\project\SportsStore\SportsStore.UnitTests\bin\Debug\Ninject.pdb
+E:\project\SportsStore\SportsStore.UnitTests\bin\Debug\Ninject.xml
+E:\project\SportsStore\SportsStore.UnitTests\obj\Debug\ResolveAssemblyReference.cache
+E:\project\SportsStore\SportsStore.UnitTests\obj\Debug\SportsStore.UnitTests.dll
+E:\project\SportsStore\SportsStore.UnitTests\obj\Debug\SportsStore.UnitTests.pdb
+E:\project\SportsStore\SportsStore.UnitTests\bin\Debug\EntityFramework.dll
+E:\project\SportsStore\SportsStore.UnitTests\bin\Debug\SportsStore.Domain.dll
+E:\project\SportsStore\SportsStore.UnitTests\bin\Debug\SportsStore.WebUI.dll
+E:\project\SportsStore\SportsStore.UnitTests\bin\Debug\SportsStore.Domain.pdb
+E:\project\SportsStore\SportsStore.UnitTests\bin\Debug\SportsStore.WebUI.pdb
+E:\project\SportsStore\SportsStore.UnitTests\bin\Debug\EntityFramework.xml
