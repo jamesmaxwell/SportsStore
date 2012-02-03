@@ -5,3 +5,4 @@ E:\project\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.dll
 E:\project\SportsStore\SportsStore.Domain\obj\Debug\SportsStore.Domain.pdb
 E:\project\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.dll
 E:\project\SportsStore\SportsStore.Domain\bin\Debug\EntityFramework.xml
+E:\project\SportsStore\SportsStore.Domain\bin\Debug\SportsStore.Domain.dll.config

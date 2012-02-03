@@ -6,6 +6,8 @@ using System.Web.Mvc;
 using SportsStore.Domain.Entities;
 using SportsStore.Domain.Abstract;
 using SportsStore.Domain.Concrete;
+using SportsStore.WebUI.Infrastructure.Abstract;
+using SportsStore.WebUI.Infrastructure.Concrete;
 using Ninject;
 using Moq;
 
@@ -21,7 +23,7 @@ namespace SportsStore.WebUI.Infrastructure
 
             AddBindings();
         }
-        
+
         protected override IController GetControllerInstance(System.Web.Routing.RequestContext requestContext, Type controllerType)
         {
             return controllerType == null ? null : (IController)ninjectKernel.Get(controllerType);
@@ -29,15 +31,13 @@ namespace SportsStore.WebUI.Infrastructure
 
         private void AddBindings()
         {
-            //Mock<IProductRepository> mock = new Mock<IProductRepository>();
-            //mock.Setup(m => m.Products).Returns(new List<Product>
-            //{
-            //    new Product(){ Name = "Footbal", Price = 25},
-            //    new Product(){ Name = "Surf Borad", Price = 179},
-            //    new Product(){ Name = "Running Shoes", Price = 90}
-            //}.AsQueryable());
-
             ninjectKernel.Bind<IProductRepository>().To<EFProductRepository>();
+
+            EmailSettings emailSettings = new EmailSettings() { WriteAsFile = bool.Parse(System.Configuration.ConfigurationManager.AppSettings["EMail.WriteAsFile"] ?? "false") };
+
+            ninjectKernel.Bind<IOrderProcessor>().To<EMailOrderProcessor>().WithConstructorArgument("settings", emailSettings);
+
+            ninjectKernel.Bind<IAuthProvider>().To<FormsAuthProvider>(); 
         }
     }
 }

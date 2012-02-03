@@ -1,75 +1,46 @@
-body
-{
-    font-size: .85em;
-    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
-    color: #232323;
-    background-color: #fff;
+BODY { font-family: Cambria, Georgia, "Times New Roman"; margin: 0; } 
+div#header div.title, div.item H3, div.item H4, div.pager A { 
+    font: bold 1em "Arial Narrow", "Franklin Gothic Medium", Arial; 
+} 
+div#header { background-color: #444; border-bottom: 2px solid #111; color: White; } 
+div#header div.title { font-size: 2em; padding: .6em; } 
+div#content { border-left: 2px solid gray; margin-left: 9em; padding: 1em; } 
+div#categories { float: left; width: 8em; padding: .3em; } 
+ 
+div.item { border-top: 1px dotted gray; padding-top: .7em; margin-bottom: .7em; } 
+div.item:first-child { border-top:none; padding-top: 0; } 
+div.item H3 { font-size: 1.3em; margin: 0 0 .25em 0; } 
+div.item H4 { font-size: 1.1em; margin:.4em 0 0 0; } 
+ 
+div.pager { text-align:right; border-top: 2px solid silver; 
+    padding: .5em 0 0 0; margin-top: 1em; } 
+div.pager A { font-size: 1.1em; color: #666; text-decoration: none; 
+      padding: 0 .4em 0 .4em; } 
+div.pager A:hover { background-color: Silver; } 
+div.pager A.selected { background-color: #353535; color: White; } 
+DIV#categories A 
+{ 
+    font: bold 1.1em "Arial Narrow","Franklin Gothic Medium",Arial; display: block; 
+    text-decoration: none; padding: .6em; color: Black; 
+    border-bottom: 1px solid silver; 
+} 
+DIV#categories A.selected { background-color: #666; color: White; } 
+DIV#categories A:hover { background-color: #CCC; } 
+DIV#categories A.selected:hover { background-color: #666; } 
+FORM { margin: 0; padding: 0; } 
+DIV.item FORM { float:right; } 
+DIV.item INPUT { 
+    color:White; background-color: #333; border: 1px solid black; cursor:pointer;  
+} 
+H2 { margin-top: 0.3em } 
+TFOOT TD { border-top: 1px dotted gray; font-weight: bold; } 
+.actionButtons A, INPUT.actionButtons { 
+    font: .8em Arial; color: White; margin: .5em; 
+    text-decoration: none; padding: .15em 1.5em .2em 1.5em; 
+    background-color: #353535; border: 1px solid black; 
 }
-
-header,
-footer,
-nav,
-section {
-    display: block;
-}
-
-/* Styles for basic forms
------------------------------------------------------------*/
-
-fieldset 
-{
-    border:1px solid #ddd;
-    padding:0 1.4em 1.4em 1.4em;
-    margin:0 0 1.5em 0;
-}
-
-legend 
-{
-    font-size:1.2em;
-    font-weight: bold;
-}
-
-textarea 
-{
-    min-height: 75px;
-}
-
-.editor-label 
-{
-    margin: 1em 0 0 0;
-}
-
-.editor-field 
-{
-    margin:0.5em 0 0 0;
-}
-
-
-/* Styles for validation helpers
------------------------------------------------------------*/
-.field-validation-error
-{
-    color: #ff0000;
-}
-
-.field-validation-valid
-{
-    display: none;
-}
-
-.input-validation-error
-{
-    border: 1px solid #ff0000;
-    background-color: #ffeeee;
-}
-
-.validation-summary-errors
-{
-    font-weight: bold;
-    color: #ff0000;
-}
-
-.validation-summary-valid
-{
-    display: none;
-}
+ DIV#cart { float:right; margin: .8em; color: Silver;  
+   background-color: #555; padding: .5em .5em .5em 1em; } 
+DIV#cart A { text-decoration: none; padding: .4em 1em .4em 1em; line-height:2.1em; 
+   margin-left: .5em; background-color: #333; color:White; border: 1px solid black;} 
+ 
